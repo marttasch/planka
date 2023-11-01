@@ -34,6 +34,11 @@
     margin: 0 0 0 40px;
     position: relative;
   }
+  @media (max-width: 926px) {
+    .moduleWrapper > form {
+      width: 95% !important;
+    }
+  }
 
   .toggleButton {
     background: transparent;
@@ -56,5 +61,11 @@
   .wrapper {
     margin-left: -40px;
     margin-top: 12px;
+  }
+  @media (max-width: 926px) {
+    .wrapper {
+      margin-left: -35px;
+      margin-right: 25px;
+    }
   }
 }

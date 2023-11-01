@@ -41,6 +41,11 @@
       color: #092d42;
     }
   }
+  @media (max-width: 926px) {
+    .taskButton {
+      width: 95%;
+    }
+  }
 
   .taskButtonText {
     position: absolute;

@@ -65,6 +65,13 @@
     padding: 8px 8px 0 16px;
   }
 
+  @media (max-width: 926px) {
+    .contentPadding {
+      padding: 8px 4px 0 4px;
+      width: 100% !important;
+    }
+  }
+
   .cursorPointer {
     cursor: pointer;
   }
@@ -127,6 +134,15 @@
     width: 100%;
   }
 
+  @media (max-width: 926px) {
+    .descriptionButton {
+      max-width: 95%;
+    }
+    .descriptionText {
+      max-width: 95%;
+    }
+  }
+
   .grid {
     background: #f5f6f7;
     margin: 0;
@@ -157,6 +173,13 @@
     padding: 0px;
   }
 
+  @media (max-width: 926px) {
+    .modalPadding {
+      display: flex;
+      flex-direction: column; 
+    }
+  }
+
   .moduleHeader {
     color: #17394d;
     font-size: 16px;
@@ -182,9 +205,38 @@
     margin: 0 0 0 40px;
     position: relative;
   }
+  @media (max-width: 926px) {
+    .moduleWrapper > form {
+      width: 95% !important;
+    }
+  }
 
   .sidebarPadding {
     padding: 8px 16px 0 8px;
+  }
+
+  @media (max-width: 926px) {
+    .sidebarPadding {
+      padding: 8px 16px 0 16px;
+      width: 100% !important;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+    .sidebarPadding > div {
+      width: 45% !important;
+      max-width: 300px;
+    }
+  }
+  @media (max-width: 490px) {
+    .sidebarPadding {
+      flex-direction: column;
+    }
+    .sidebarPadding > div {
+      width: 100% !important;
+      max-width: 100%;
+    }
   }
 
   .text {
@@ -203,7 +255,12 @@
 
   @media (max-width: 926px) {
     .wrapper {
-      width: 95%;
+      width: 90vw;
+      position: fixed;
+      top: 0vh;
+      //bottom: 5vh;
+      left: 5vw;
+      margin-bottom: 20px;
     }
   }
 }
